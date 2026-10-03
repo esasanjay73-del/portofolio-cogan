@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Esa Sanjaya | { ES } Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="logo">{ ES }</div>
+  <nav class="links">
+    <a data-anim="home" data-target="#home">Beranda</a>
+    <a data-anim="profile" data-target="#profile">Profil &amp; Pendidikan</a>
+    <a data-anim="hobby" data-target="#hobbies">Hobi</a>
+    <a data-anim="idola" data-target="#idola">Idola</a>
+    <a data-anim="team" data-target="#teams">Tim Favorit</a>
+  </nav>
+  <div class="nav-right">
+    <div style="position:relative;">
+      <div class="theme-btn" id="themeBtn"><div class="dot" id="themeDot"></div></div>
+      <div class="theme-popover" id="themePopover">
+        <div class="swatch-row" id="swatchRow"></div>
+        <label>Warna bebas <input type="color" id="customColor" value="#00f3ff"></label>
+      </div>
+    </div>
+    <div class="burger" id="burger"><span></span><span></span><span></span></div>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a data-anim="home" data-target="#home">Beranda</a>
+  <a data-anim="profile" data-target="#profile">Profil &amp; Pendidikan</a>
+  <a data-anim="hobby" data-target="#hobbies">Hobi</a>
+  <a data-anim="idola" data-target="#idola">Idola</a>
+  <a data-anim="team" data-target="#teams">Tim Favorit</a>
+</div>
+
+<div class="nav-overlay" id="navOverlay"><div class="stage" id="navStage"></div></div>
+<div class="explode-layer" id="explodeLayer"></div>
+
+<section class="hero" id="home">
+  <canvas id="bg-canvas"></canvas>
+  <div class="hero-content">
+    <div class="eyebrow">halo, saya</div>
+    <h1 class="hero-name">Esa Sanjaya</h1>
+    <div class="terminal-type" id="typeTarget"></div>
+    <a href="#profile" class="cyber-btn" data-anim="profile" data-target="#profile">Akses Portofolio</a>
+  </div>
+</section>
+
+<section id="profile">
+  <div class="section-inner reveal">
+    <h2 class="heading">Profil &amp; <span>Pendidikan</span></h2>
+    <div class="about-grid">
+      <div>
+        <div class="profile-photo-wrap" id="profilePhoto">
+          <img src="assets/images/profil.jpg" alt="Foto Esa Sanjaya">
+        </div>
+        <div class="photo-caption">Esa Sanjaya (Orang Ganteng)</div>
+        <div class="pixel-grid me-pixel" id="mePixel" title="Klik aku!"></div>
+      </div>
+      <div class="about-text">
+        <p>Saya Esa Sanjaya, mahasiswa Ilmu Komputer di Universitas Negeri Medan dengan visi menjadi seorang Cyber Security Engineer. Saya berdedikasi untuk mengamankan infrastruktur digital, menganalisis celah jaringan, dan terus berkembang tanpa henti di dunia teknologi.</p>
+        <p>Bagi saya, keamanan siber adalah proses belajar seumur hidup — memahami pola serangan, mempelajari jaringan, dan beradaptasi dengan perubahan teknologi yang tidak pernah berhenti.</p>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="tl-year">SD</div>
+            <h4>SD Sibande 030420, Pakpak Bharat</h4>
+          </div>
+          <div class="timeline-item">
+            <div class="tl-year">SMP</div>
+            <h4>SMP Pencawan Medan</h4>
+            <span class="tl-badge">★ Juara Kelas Berturut-turut</span>
+          </div>
+          <div class="timeline-item">
+            <div class="tl-year">SMA</div>
+            <h4>SMA Pencawan Medan</h4>
+            <span class="tl-badge">★ Peringkat 5 Besar</span>
+            <span class="tl-badge">★ Anggota Aktif OSIS</span>
+          </div>
+          <div class="timeline-item">
+            <div class="tl-year">Kuliah</div>
+            <h4>Universitas Negeri Medan</h4>
+            <span class="tl-badge">Mahasiswa Ilmu Komputer</span>
+          </div>
+        </div>
+
+        <div class="console-box">
+          <div class="bar"><span></span><span></span><span></span></div>
+          <div>&gt; Log Keahlian: Saat ini sedang belajar Python, serta memahami sistem jaringan dan website.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="hobbies">
+  <div class="section-inner reveal">
+    <h2 class="heading">Hobi &amp; <span>Eksplorasi</span></h2>
+    <div class="hobby-grid">
+      <div class="hobby-card" data-tilt>
+        <img src="assets/images/hobi-1.jpg" alt="Koleksi komik dan manga">
+        <h3>Membaca Komik &amp; Manga</h3>
+        <p>Membaca manga dan komik menjadi ruang eskapisme pribadi, tempat melepas penat sekaligus menstimulasi imajinasi visual lewat dunia-dunia yang penuh detail.</p>
+      </div>
+      <div class="hobby-card" data-tilt>
+        <img src="assets/images/hobi-2.jpg" alt="Setup battle station gaming">
+        <h3>Gaming Strategis</h3>
+        <p>Baik merancang taktik dalam game kompetitif maupun menjelajah dunia terbuka, bermain game melatih logika dan kecepatan kalkulasi risiko secara tidak langsung.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="idola">
+  <div class="section-inner reveal">
+    <h2 class="heading">Idola &amp; <span>Inspirasi</span></h2>
+    <div class="idol-grid">
+      <div class="idol-card">
+        <img class="idol-photo" src="assets/images/idola-tesla.jpg" alt="Foto Nikola Tesla">
+        <h3>Nikola Tesla</h3>
+        <div class="idol-role">Bapak Listrik AC &amp; Visioner Masa Depan</div>
+        <div class="idol-quote">"The present is theirs; the future, for which I really worked, is mine."</div>
+        <button class="idol-trigger" data-idol="tesla">Lihat Mode Pixel</button>
+        <div class="pixel-grid" id="pixel-tesla" style="display:none; margin-top:16px;"></div>
+      </div>
+      <div class="idol-card">
+        <img class="idol-photo" src="assets/images/idola-kroos.jpg" alt="Foto Toni Kroos">
+        <h3>Toni Kroos</h3>
+        <div class="idol-role">Gelandang Metronom Real Madrid &amp; Juara Dunia</div>
+        <div class="idol-quote">"Control the ball, control the game."</div>
+        <button class="idol-trigger" data-idol="kroos">Lihat Mode Pixel</button>
+        <div class="pixel-grid" id="pixel-kroos" style="display:none; margin-top:16px;"></div>
+      </div>
+      <div class="idol-card">
+        <img class="idol-photo" src="assets/images/idola-hamilton.jpg" alt="Foto Lewis Hamilton">
+        <h3>Lewis Hamilton</h3>
+        <div class="idol-role">7x Juara Dunia Formula 1 &amp; Rekor Kemenangan</div>
+        <div class="idol-quote">"Still I rise, no matter how tough the race gets."</div>
+        <button class="idol-trigger" data-idol="hamilton">Lihat Mode Pixel</button>
+        <div class="pixel-grid" id="pixel-hamilton" style="display:none; margin-top:16px;"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="teams" class="teams">
+  <div class="split reveal">
+    <div class="split-panel madrid">
+      <div class="tag">// TIM SEPAK BOLA</div>
+      <h3>Hala Madrid</h3>
+      <div class="slogan">"¡Hala Madrid! ...y nada más"</div>
+      <p>15 trofi Liga Champions adalah bukti mentalitas juara yang tidak pernah menyerah hingga menit terakhir — warisan terbesar dalam sejarah sepak bola dunia.</p>
+      <div class="team-photos">
+        <img src="assets/images/madrid-pendukung.jpg" alt="Pendukung Real Madrid">
+        <img class="team-img-mad" src="assets/images/madrid-kolase.jpg" alt="Kolase pemain Real Madrid">
+      </div>
+    </div>
+    <div class="split-panel ferrari">
+      <div class="tag">// FORMULA 1</div>
+      <h3>Scuderia Ferrari</h3>
+      <div class="slogan">"Essere Ferrari"</div>
+      <p>Perpaduan rekayasa aerodinamika yang indah, kecepatan murni, dan kesetiaan jutaan Tifosi di seluruh dunia yang terus bertahan melewati naik-turunnya musim kompetisi.</p>
+      <div class="team-photos">
+        <img src="assets/images/ferrari-pendukung.jpg" alt="Pendukung Scuderia Ferrari">
+        <img class="team-img-fer" src="assets/images/ferrari-mobil.jpg" alt="Mobil Ferrari F1">
+      </div>
+    </div>
+  </div>
+</section>
+
+<audio id="bgm" src="music/starboy.mp3" loop preload="auto"></audio>
+<button class="bgm-btn" id="bgmBtn" aria-label="Putar atau jeda musik latar" title="Starboy - The Weeknd">🔊</button>
+
+<footer>
+  <div class="social-row">
+    <a href="https://instagram.com/es.anjay4" target="_blank" rel="noopener" aria-label="Instagram">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 3.25.15 4.77 1.69 4.92 4.92.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.15 3.23-1.66 4.77-4.92 4.92-1.27.06-1.64.07-4.85.07s-3.58-.01-4.85-.07c-3.26-.15-4.77-1.7-4.92-4.92-.06-1.27-.07-1.65-.07-4.85s.02-3.58.07-4.85c.15-3.23 1.67-4.77 4.92-4.92 1.27-.06 1.65-.07 4.85-.07zm0-2.16c-3.26 0-3.67.01-4.95.07-4.35.2-6.78 2.62-6.98 6.98-.06 1.28-.07 1.69-.07 4.95s.01 3.67.07 4.95c.2 4.35 2.62 6.78 6.98 6.98 1.28.06 1.69.07 4.95.07s3.67-.01 4.95-.07c4.35-.2 6.78-2.62 6.98-6.98.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.2-4.35-2.62-6.78-6.98-6.98-1.28-.06-1.69-.07-4.95-.07zm0 5.84a6 6 0 1 0 0 12 6 6 0 0 0 0-12zm0 9.89a3.89 3.89 0 1 1 0-7.78 3.89 3.89 0 0 1 0 7.78zm6.41-10.12a1.44 1.44 0 1 0 0 2.88 1.44 1.44 0 0 0 0-2.88z"/></svg>
+    </a>
+    <a href="https://github.com/esasanjay73-del" target="_blank" rel="noopener" aria-label="GitHub">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .3a12 12 0 0 0-3.79 23.39c.6.11.82-.26.82-.58v-2.17c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.33-1.76-1.33-1.76-1.09-.74.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49 1 .11-.78.42-1.3.76-1.6-2.66-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.17 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.65.25 2.87.12 3.17.77.84 1.23 1.91 1.23 3.22 0 4.61-2.81 5.63-5.49 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .3z"/></svg>
+    </a>
+  </div>
+  <p>© 2026 Esa Sanjaya | System Secured &amp; Engineered with Passion.</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
